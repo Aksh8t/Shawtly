@@ -18,7 +18,7 @@ export function QRGenerator() {
     <section className="py-24 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-accent bg-clip-text text-transparent">
+          <h2 className="text-5xl font-bold mb-6 text-foreground">
             QR Code Generator
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -136,7 +136,7 @@ export function QRGenerator() {
                 </div>
               </div>
 
-              <Button className="hero-button w-full">
+              <Button className="bg-white text-black hover:bg-gray-200 transition-smooth w-full">
                 Generate QR Code
               </Button>
             </CardContent>

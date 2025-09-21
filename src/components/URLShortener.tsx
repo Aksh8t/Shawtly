@@ -30,22 +30,18 @@ export function URLShortener() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
-      {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/20" />
-      
-      <div className="container max-w-4xl mx-auto text-center z-10">
-        <div className="animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent">
-            Shawtly
+    <section className="pt-24 pb-16 px-4">
+      <div className="container max-w-4xl mx-auto">
+        <div className="text-center mb-12 animate-fade-in">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+            URL Shortener
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Shorten URLs, track analytics, and create custom QR codes with payment options. 
-            All in one modern platform.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Shorten URLs, track analytics, and create custom QR codes with payment options.
           </p>
         </div>
 
-        <Card className="glass-card animate-fade-in max-w-2xl mx-auto mb-16">
+        <Card className="glass-card animate-fade-in max-w-2xl mx-auto mb-12">
           <CardContent className="p-8">
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <Input
@@ -57,7 +53,7 @@ export function URLShortener() {
               <Button
                 onClick={handleShorten}
                 disabled={!url || isLoading}
-                className="hero-button h-14 px-8 text-lg font-semibold"
+                className="h-14 px-8 text-lg font-semibold bg-white text-black hover:bg-gray-200 transition-smooth"
               >
                 {isLoading ? "Shortening..." : "Shorten"}
               </Button>
@@ -79,11 +75,11 @@ export function URLShortener() {
                 </div>
                 
                 <div className="flex justify-center gap-4 mt-6">
-                  <Button variant="outline" className="transition-smooth hover:bg-primary/10">
+                  <Button variant="outline" className="transition-smooth hover:bg-white hover:text-black">
                     <BarChart3 size={16} className="mr-2" />
                     View Analytics
                   </Button>
-                  <Button variant="outline" className="transition-smooth hover:bg-primary/10">
+                  <Button variant="outline" className="transition-smooth hover:bg-white hover:text-black">
                     <QrCode size={16} className="mr-2" />
                     Generate QR
                   </Button>
@@ -95,24 +91,24 @@ export function URLShortener() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in">
           <div className="text-center">
-            <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 animate-float">
-              <Link className="text-white" size={24} />
+            <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 animate-float">
+              <Link className="text-black" size={24} />
             </div>
             <h3 className="text-xl font-semibold mb-2">Smart Shortening</h3>
             <p className="text-muted-foreground">Create short, memorable links with custom aliases</p>
           </div>
           
           <div className="text-center">
-            <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 animate-float" style={{ animationDelay: "1s" }}>
-              <BarChart3 className="text-white" size={24} />
+            <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 animate-float" style={{ animationDelay: "1s" }}>
+              <BarChart3 className="text-black" size={24} />
             </div>
             <h3 className="text-xl font-semibold mb-2">Real-time Analytics</h3>
             <p className="text-muted-foreground">Track clicks, locations, and performance metrics</p>
           </div>
           
           <div className="text-center">
-            <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 animate-float" style={{ animationDelay: "2s" }}>
-              <QrCode className="text-white" size={24} />
+            <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 animate-float" style={{ animationDelay: "2s" }}>
+              <QrCode className="text-black" size={24} />
             </div>
             <h3 className="text-xl font-semibold mb-2">QR Codes</h3>
             <p className="text-muted-foreground">Generate custom QR codes with payment options</p>

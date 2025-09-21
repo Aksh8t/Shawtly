@@ -8,41 +8,41 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 13% 9%;
-    --foreground: 220 9% 95%;
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 220 13% 11%;
-    --card-foreground: 220 9% 95%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 220 13% 11%;
-    --popover-foreground: 220 9% 95%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 263 70% 65%;
-    --primary-foreground: 220 9% 95%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 8%;
 
-    --secondary: 220 13% 15%;
-    --secondary-foreground: 220 9% 85%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 85%;
 
-    --muted: 220 13% 15%;
-    --muted-foreground: 220 9% 60%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 263 70% 65%;
-    --accent-foreground: 220 9% 95%;
+    --accent: 0 0% 90%;
+    --accent-foreground: 0 0% 8%;
 
     --destructive: 0 62.8% 60%;
-    --destructive-foreground: 220 9% 95%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 220 13% 20%;
-    --input: 220 13% 15%;
-    --ring: 263 70% 65%;
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 90%;
 
     --radius: 0.75rem;
     
     /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(263 70% 65%) 0%, hsl(220 70% 75%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(220 13% 15%) 0%, hsl(220 13% 20%) 100%);
-    --glow-primary: 0 0 40px hsl(263 70% 65% / 0.3);
-    --glow-secondary: 0 0 20px hsl(263 70% 65% / 0.2);
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 95%) 0%, hsl(0 0% 85%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(0 0% 15%) 0%, hsl(0 0% 20%) 100%);
+    --glow-primary: 0 0 20px hsl(0 0% 95% / 0.2);
+    --glow-secondary: 0 0 10px hsl(0 0% 95% / 0.1);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
@@ -96,12 +96,11 @@ All colors MUST be HSL.
   }
   
   .hero-button {
-    @apply relative overflow-hidden transition-smooth;
-    background: var(--gradient-primary);
+    @apply relative overflow-hidden transition-smooth bg-white text-black;
   }
   
   .hero-button:hover {
-    @apply glow-primary;
+    @apply glow-primary bg-gray-200;
     transform: translateY(-2px);
   }
   

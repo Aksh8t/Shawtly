@@ -8,28 +8,28 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-primary rounded flex items-center justify-center">
-                <Link2 className="text-white" size={18} />
-              </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-                Shawtly
-              </span>
+          <div className="flex items-center space-x-2">
+            <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
+              <Link2 className="text-black" size={18} />
             </div>
+            <span className="text-xl font-bold text-foreground">
+              Shawtly
+            </span>
+          </div>
             <p className="text-muted-foreground">
               The modern URL shortener with powerful analytics and QR code generation.
             </p>
             <div className="flex space-x-2">
-              <Button variant="ghost" size="sm" className="hover:bg-primary/10">
+              <Button variant="ghost" size="sm" className="hover:bg-white hover:text-black">
                 <Github size={18} />
               </Button>
-              <Button variant="ghost" size="sm" className="hover:bg-primary/10">
+              <Button variant="ghost" size="sm" className="hover:bg-white hover:text-black">
                 <Twitter size={18} />
               </Button>
-              <Button variant="ghost" size="sm" className="hover:bg-primary/10">
+              <Button variant="ghost" size="sm" className="hover:bg-white hover:text-black">
                 <Linkedin size={18} />
               </Button>
-              <Button variant="ghost" size="sm" className="hover:bg-primary/10">
+              <Button variant="ghost" size="sm" className="hover:bg-white hover:text-black">
                 <Mail size={18} />
               </Button>
             </div>

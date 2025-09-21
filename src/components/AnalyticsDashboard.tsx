@@ -13,11 +13,11 @@ const clickData = [
 ];
 
 const locationData = [
-  { name: "US", value: 40, color: "hsl(263, 70%, 65%)" },
-  { name: "UK", value: 25, color: "hsl(220, 70%, 75%)" },
-  { name: "DE", value: 15, color: "hsl(280, 60%, 70%)" },
-  { name: "FR", value: 12, color: "hsl(240, 65%, 80%)" },
-  { name: "Others", value: 8, color: "hsl(200, 55%, 75%)" },
+  { name: "US", value: 40, color: "hsl(0, 0%, 95%)" },
+  { name: "UK", value: 25, color: "hsl(0, 0%, 85%)" },
+  { name: "DE", value: 15, color: "hsl(0, 0%, 75%)" },
+  { name: "FR", value: 12, color: "hsl(0, 0%, 65%)" },
+  { name: "Others", value: 8, color: "hsl(0, 0%, 55%)" },
 ];
 
 const deviceData = [
@@ -34,7 +34,7 @@ export function AnalyticsDashboard() {
     <section className="py-24 px-4 bg-gradient-to-b from-background to-secondary/20">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
+          <h2 className="text-5xl font-bold mb-6 text-foreground">
             Powerful Analytics
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -55,8 +55,8 @@ export function AnalyticsDashboard() {
                     +12.5%
                   </p>
                 </div>
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
-                  <MousePointer className="text-primary" size={20} />
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                  <MousePointer className="text-black" size={20} />
                 </div>
               </div>
             </CardContent>
@@ -73,8 +73,8 @@ export function AnalyticsDashboard() {
                     +8.2%
                   </p>
                 </div>
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
-                  <Users className="text-primary" size={20} />
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                  <Users className="text-black" size={20} />
                 </div>
               </div>
             </CardContent>
@@ -91,8 +91,8 @@ export function AnalyticsDashboard() {
                     +3.1%
                   </p>
                 </div>
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
-                  <Globe className="text-primary" size={20} />
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                  <Globe className="text-black" size={20} />
                 </div>
               </div>
             </CardContent>
@@ -109,8 +109,8 @@ export function AnalyticsDashboard() {
                     +5.4%
                   </p>
                 </div>
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
-                  <TrendingUp className="text-primary" size={20} />
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                  <TrendingUp className="text-black" size={20} />
                 </div>
               </div>
             </CardContent>

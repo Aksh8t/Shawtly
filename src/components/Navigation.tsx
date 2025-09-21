@@ -23,17 +23,15 @@ export function Navigation() {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? "glass-card backdrop-blur-xl border-b border-border/50" : "bg-transparent"
-    }`}>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black border-b border-border/50 backdrop-blur-xl">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-primary rounded flex items-center justify-center">
-              <Zap className="text-white" size={18} />
+            <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
+              <Zap className="text-black" size={18} />
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
+            <span className="text-xl font-bold text-white">
               Shawtly
             </span>
           </div>
@@ -64,10 +62,10 @@ export function Navigation() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" className="transition-smooth hover:bg-primary/10">
+            <Button variant="outline" className="transition-smooth hover:bg-white hover:text-black">
               Sign In
             </Button>
-            <Button className="hero-button">
+            <Button className="bg-white text-black hover:bg-gray-200 transition-smooth">
               Get Started
             </Button>
           </div>
@@ -106,10 +104,10 @@ export function Navigation() {
                 QR Codes
               </button>
               <div className="pt-4 border-t border-border/50 space-y-3">
-                <Button variant="outline" className="w-full">
+                <Button variant="outline" className="w-full hover:bg-white hover:text-black">
                   Sign In
                 </Button>
-                <Button className="hero-button w-full">
+                <Button className="bg-white text-black hover:bg-gray-200 transition-smooth w-full">
                   Get Started
                 </Button>
               </div>
