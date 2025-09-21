@@ -30,18 +30,22 @@ export function URLShortener() {
   };
 
   return (
-    <section className="pt-24 pb-16 px-4">
-      <div className="container max-w-4xl mx-auto">
+    <section className="pt-24 pb-16 px-4 relative overflow-hidden">
+      {/* Lovable-inspired gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 via-purple-800 via-pink-700 to-orange-600 opacity-90" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+      
+      <div className="container max-w-4xl mx-auto relative z-10">
         <div className="text-center mb-12 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             URL Shortener
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-white/80 max-w-2xl mx-auto">
             Shorten URLs, track analytics, and create custom QR codes with payment options.
           </p>
         </div>
 
-        <Card className="glass-card animate-fade-in max-w-2xl mx-auto mb-12">
+        <Card className="glass-card animate-fade-in max-w-2xl mx-auto mb-20">
           <CardContent className="p-8">
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <Input
@@ -89,29 +93,29 @@ export function URLShortener() {
           </CardContent>
         </Card>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in relative z-10">
           <div className="text-center">
             <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 animate-float">
               <Link className="text-black" size={24} />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Smart Shortening</h3>
-            <p className="text-muted-foreground">Create short, memorable links with custom aliases</p>
+            <h3 className="text-xl font-semibold mb-2 text-white">Smart Shortening</h3>
+            <p className="text-white/70">Create short, memorable links with custom aliases</p>
           </div>
           
           <div className="text-center">
             <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 animate-float" style={{ animationDelay: "1s" }}>
               <BarChart3 className="text-black" size={24} />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Real-time Analytics</h3>
-            <p className="text-muted-foreground">Track clicks, locations, and performance metrics</p>
+            <h3 className="text-xl font-semibold mb-2 text-white">Real-time Analytics</h3>
+            <p className="text-white/70">Track clicks, locations, and performance metrics</p>
           </div>
           
           <div className="text-center">
             <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 animate-float" style={{ animationDelay: "2s" }}>
               <QrCode className="text-black" size={24} />
             </div>
-            <h3 className="text-xl font-semibold mb-2">QR Codes</h3>
-            <p className="text-muted-foreground">Generate custom QR codes with payment options</p>
+            <h3 className="text-xl font-semibold mb-2 text-white">QR Codes</h3>
+            <p className="text-white/70">Generate custom QR codes with payment options</p>
           </div>
         </div>
       </div>
